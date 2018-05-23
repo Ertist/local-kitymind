@@ -2603,7 +2603,7 @@ angular.module('kityminderEditor')
 					'daysago': '{0} 天前',
 					'longago': '很久之前',
 
-					'redirect': '您正在打开连接 {0}，百度脑图不能保证连接的安全性，是否要继续？',
+					'redirect': '您正在打开连接 {0}，软件不能保证连接的安全性，是否要继续？',
 					'navigator': '导航器',
 
 					'unsavedcontent': '当前文件还没有保存到网盘：\n\n{0}\n\n虽然未保存的数据会缓存在草稿箱，但是清除浏览器缓存会导致草稿箱清除。',

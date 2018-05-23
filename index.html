@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>KityMinder Editor - Powered By FEX</title>
+	<title>思维导图制作平台</title>
 
 	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
 
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="./bower_components/color-picker/dist/color-picker.min.css" />
 	<!-- endbower -->
 
-	<link rel="stylesheet" href="kityminder.editor.min.css">
+	<link rel="stylesheet" href="kityminder.editor.css">
 
 	<style>
 		html, body {
@@ -24,15 +24,16 @@
 			overflow: hidden;
 		}
 		h1.editor-title {
-			background: #393F4F;
+			background: #425fad;
 			color: white;
 			margin: 0;
 			height: 40px;
-			font-size: 14px;
+			font-size: 16px;
 			line-height: 40px;
 			font-family: 'Hiragino Sans GB', 'Arial', 'Microsoft Yahei';
 			font-weight: normal;
 			padding: 0 20px;
+			text-align: center;
 		}
 		div.minder-editor-container {
 			position: absolute;
@@ -45,8 +46,8 @@
 </head>
 <body ng-app="kityminderDemo" ng-controller="MainController">
 <h1 class="editor-title">
-	<a href="https://github.com/fex-team/kityminder-editor" style="color: #fff;" target="_blank">
-		KityMinder Editor - Powered By FEX
+	<a href="index.html" style="color: #fff;" target="_blank">
+		思维导图制作平台
 	</a>
 </h1>
 <kityminder-editor on-init="initEditor(editor, minder)" data-theme="fresh-green"></kityminder-editor>

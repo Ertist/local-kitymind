@@ -1412,9 +1412,9 @@ div a.theme-item {
   padding: 5px 0;
   left: 10px;
   bottom: 10px;
-  background: #fc8383;
+  background: #c683fc;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 20px;
   z-index: 10;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   transition: -webkit-transform 0.7s 0.1s ease;

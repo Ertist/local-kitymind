@@ -15,13 +15,15 @@
 		// 'line-height': '30px',
 		'margin-top': '0px',
 		'float': 'right',
-		'background-color': '#fff',
+		'background-color': '#425fad',
 		'min-width': '60px',
 		'text-decoration': 'none',
-		color: '#999',
+		color: '#FFFFFF',
 		'padding': '0 10px',
 		border: 'none',
-		'border-right': '1px solid #ccc',
+		'font-size': '12px',
+		'font-family':' Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif',
+		// 'border-right': '1px solid #ccc',
 	});
 	$('.input').css({
 		'overflow': 'hidden',
@@ -55,6 +57,8 @@
 				exportType = type;
 				break;
 		}
+
+		
 		if(JSON.stringify(oldData) == JSON.stringify(editor.minder.exportJson())){
 			return;
 		}else{
@@ -77,7 +81,8 @@
 			aLink.href = url;
 			aLink.download = $('#node_text1').text()+'.'+type;
 		});
-	}).on('mouseout', '.export', function(event) {
+	})
+	.on('mouseout', '.export', function(event) {
 		// 鼠标移开是设置禁止点击状态，下次鼠标移入时需重新计算需要生成的文件
 		event.preventDefault();
 		$(this).css('cursor', 'not-allowed');
